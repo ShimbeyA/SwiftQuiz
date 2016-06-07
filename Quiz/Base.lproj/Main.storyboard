@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooo-IB-Cxw">
+                                <rect key="frame" x="194" y="109" width="249" height="45"/>
+                                <color key="backgroundColor" red="0.35598437535636496" green="1" blue="0.99402357364483318" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOi-8S-tnZ">
+                                <rect key="frame" x="194" y="162" width="249" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.18989938751766955" blue="0.341233731796317" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioi-56-91x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8Q-WD-qPy">
+                                <rect key="frame" x="194" y="224" width="249" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.18989938749999999" blue="0.3412337318" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S7d-Bw-phg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv4-go-RUq">
+                                <rect key="frame" x="194" y="293" width="249" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.18989938749999999" blue="0.3412337318" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjV-Jj-gKR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0z-h6-TrL">
+                                <rect key="frame" x="359" y="435" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="Next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roY-oC-kEg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-8k-jVn">
+                                <rect key="frame" x="194" y="354" width="247" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1ks-8k-jVn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="3aZ-20-wGS"/>
+                            <constraint firstItem="ooo-IB-Cxw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="47O-f0-lYI"/>
+                            <constraint firstItem="1ks-8k-jVn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Lp-Pn-7cJ"/>
+                            <constraint firstItem="ooo-IB-Cxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CL5-TS-Wg0"/>
+                            <constraint firstItem="yOi-8S-tnZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="G9F-8R-I5l"/>
+                            <constraint firstItem="K8Q-WD-qPy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSP-B4-G3E"/>
+                            <constraint firstItem="K8Q-WD-qPy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Tia-GD-dYD"/>
+                            <constraint firstItem="Mv4-go-RUq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uxb-qH-EHD"/>
+                            <constraint firstItem="Mv4-go-RUq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cEQ-1x-xuF"/>
+                            <constraint firstItem="j0z-h6-TrL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hIS-hC-l5c"/>
+                            <constraint firstItem="yOi-8S-tnZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="obI-UW-lTp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Button1" destination="yOi-8S-tnZ" id="eRP-3V-Rq2"/>
+                        <outlet property="Button2" destination="K8Q-WD-qPy" id="yq4-Ln-xy5"/>
+                        <outlet property="Button3" destination="Mv4-go-RUq" id="Jjn-Ik-Bgh"/>
+                        <outlet property="LabelEnd" destination="1ks-8k-jVn" id="10v-23-lwl"/>
+                        <outlet property="Next" destination="j0z-h6-TrL" id="9Kz-rO-GdP"/>
+                        <outlet property="QuestionLabel" destination="ooo-IB-Cxw" id="dEa-mp-feJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="220" y="308"/>
         </scene>
     </scenes>
 </document>
